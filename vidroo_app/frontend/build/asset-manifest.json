@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.afa0d974.css",
-    "main.js": "/static/js/main.c28fe0c8.js",
+    "main.js": "/static/js/main.2655d726.js",
     "static/media/jocker.jpeg": "/static/media/jocker.1cd8662b32612855293d.jpeg",
     "static/media/al-pacino.jpg": "/static/media/al-pacino.9b97c8aeed06f9d31f65.jpg",
     "static/media/iranyekanwebmedium.eot": "/static/media/iranyekanwebmedium.535c640b1a31282f207e.eot",
@@ -38,10 +38,10 @@
     "static/media/iranyekanwebblack.woff2": "/static/media/iranyekanwebblack.f33805cdeb0c06f3c19f.woff2",
     "index.html": "/index.html",
     "main.afa0d974.css.map": "/static/css/main.afa0d974.css.map",
-    "main.c28fe0c8.js.map": "/static/js/main.c28fe0c8.js.map"
+    "main.2655d726.js.map": "/static/js/main.2655d726.js.map"
   },
   "entrypoints": [
     "static/css/main.afa0d974.css",
-    "static/js/main.c28fe0c8.js"
+    "static/js/main.2655d726.js"
   ]
 }
