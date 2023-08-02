@@ -1,0 +1,32 @@
+@use "../../sass/variables" as *;
+
+.panel-p {
+  width: 100%;
+  height: 100%;
+
+  // creating a stacking context
+  z-index: 1;
+
+  &__container-1 {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__announce-container,
+  &__btn {
+    margin-top: 10rem;
+  }
+
+  & &__announce {
+    width: 80rem;
+    height: 10rem;
+  }
+
+  & &__handle-room {
+    margin-top: 10rem;
+  }
+}

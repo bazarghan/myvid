@@ -1,0 +1,9 @@
+.profile-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__profile {
+    margin-top: 5rem;
+  }
+}

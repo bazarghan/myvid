@@ -1,0 +1,73 @@
+@use "../../sass/variables" as *;
+
+.req-notification-c {
+  width: 35rem;
+  height: 12rem;
+
+  display: flex;
+  flex-direction: column;
+
+  border-left: 2px solid $color-notification-info-400;
+  border-top: 2px solid $color-notification-info-400;
+  border-bottom: 2px solid $color-notification-info-400;
+  border-right: 5px solid $color-notification-info-600;
+
+  background-color: $color-notification-info-100;
+  padding: 1rem;
+
+  &__container-1,
+  &__container-2,
+  &__container-3,
+  &__container-1-1 {
+    display: flex;
+    align-items: center;
+  }
+
+  &__container-1 {
+    justify-content: space-between;
+
+    .MuiSvgIcon-root {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__container-1-1 {
+    gap: 5px;
+  }
+
+  &__title {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-250;
+  }
+
+  &__container-2 {
+    font-size: $font-size-200;
+    gap: 1rem;
+
+    margin-top: 5px;
+    margin-right: 2.7rem;
+  }
+
+  &__username {
+    font-weight: $font-weight-bold;
+    color: $color-notification-info-600;
+  }
+
+  &__container-3 {
+    gap: 1rem;
+
+    margin-top: 2rem;
+    margin-right: 2.7rem;
+  }
+
+  & &__btn-1 {
+    background-color: $color-notification-info-600;
+    color: $color-notification-info-100;
+  }
+
+  & &__btn-2 {
+    border: 1px solid $color-notification-info-600;
+    color: $color-notification-info-600;
+  }
+}

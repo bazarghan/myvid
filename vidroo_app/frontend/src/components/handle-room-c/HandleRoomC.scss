@@ -1,0 +1,61 @@
+@use "../../sass/variables" as *;
+
+.handle-room-c {
+  width: 120rem;
+  min-height: 20rem;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  // border: 1px solid $color-primary;
+  border-radius: $border-radius;
+
+  background-color: $color-700;
+
+  & &__confirm-notification {
+    position: absolute;
+  }
+
+  &__container-1 {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    margin-right: 3rem;
+  }
+
+  &__container-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    width: 79rem;
+
+    padding-bottom: 1rem;
+
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $color-700;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color-100;
+      border-radius: 1rem;
+    }
+  }
+
+  &__line {
+    width: 2px;
+    height: 16rem;
+
+    background-color: $color-100;
+  }
+}

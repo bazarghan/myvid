@@ -1,0 +1,136 @@
+@use "../../sass/variables" as *;
+
+.handle-room-item-c {
+  min-width: 13rem;
+  min-height: 13rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: $border-radius;
+
+  &__container-1,
+  &__container-2,
+  &__container-3,
+  &__container-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__container-1 {
+    gap: 5px;
+  }
+
+  &__container-3 {
+    gap: 5px;
+  }
+
+  &__container-1-1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: $font-size-200;
+
+    color: #424242;
+  }
+
+  &__container-2-1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: $font-size-200;
+    font-weight: $font-weight-regular;
+
+    color: #424242;
+  }
+
+  & &__admin-btn-primary {
+    height: 2.4rem;
+
+    background-color: $color-900;
+    color: #ffffff;
+
+    font-size: $font-size-150;
+
+    margin-top: 8px;
+  }
+
+  & &__admin-btn {
+    height: 2.4rem;
+
+    color: $color-900;
+    border: 1px solid $color-900;
+
+    font-size: $font-size-150;
+
+    margin-top: 5px;
+  }
+
+  &__container-4-1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: $font-size-150;
+
+    color: $color-txt-300;
+    margin-top: 5px;
+  }
+
+  &__room-name {
+    font-size: $font-size-250;
+
+    color: $color-primary;
+
+    margin-top: 1rem;
+  }
+
+  &__btn {
+    height: 2.4rem;
+
+    font-size: $font-size-150;
+
+    margin-top: 8px;
+  }
+
+  &--create {
+    font-size: $font-size-300;
+    font-weight: $font-weight-bold;
+
+    justify-content: center;
+
+    background-color: $color-primary;
+
+    .MuiSvgIcon-root {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &--enter {
+    font-size: $font-size-300;
+    font-weight: $font-weight-bold;
+
+    justify-content: center;
+
+    border: 1px solid $color-primary;
+
+    color: $color-primary;
+
+    .MuiSvgIcon-root {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &--room {
+    font-size: $font-size-250;
+    font-weight: $font-weight-bold;
+
+    background-color: $color-100;
+  }
+}

@@ -1,0 +1,40 @@
+@use "../../sass/variables" as *;
+
+.avatar-c {
+  position: relative;
+
+  &__img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    border-radius: 50%;
+  }
+
+  &--online {
+    width: 1.4rem;
+    height: 1.4rem;
+
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+
+    border-radius: 50%;
+    border: 3px solid $color-900;
+
+    background-color: $color-notification-success-400;
+  }
+
+  &--offline {
+    width: 1.4rem;
+    height: 1.4rem;
+
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+
+    border-radius: 50%;
+    border: 3px solid $color-100;
+
+    background-color: $color-900;
+  }
+}

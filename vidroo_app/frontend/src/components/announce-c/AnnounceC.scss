@@ -1,0 +1,23 @@
+@use "../../sass/variables" as *;
+
+.announce-c {
+  width: 55rem;
+  min-height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $color-secondary;
+  font-size: $font-size-200;
+
+  border: 1px solid $color-secondary;
+  border-radius: $border-radius;
+
+  padding: 1.5rem 2rem;
+
+  &--slider {
+    font-size: $font-size-250;
+    justify-content: space-between;
+  }
+}

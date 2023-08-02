@@ -1,0 +1,26 @@
+@use "../../sass/variables" as *;
+
+.chat-item-c {
+  max-width: 30rem;
+
+  align-self: flex-start;
+
+  font-size: $font-size-150;
+
+  border-radius: 3px 10px 0px 3px;
+
+  background-color: $color-primary;
+  padding: 1rem;
+
+  &__username {
+    font-weight: $font-weight-extra-bold;
+  }
+
+  &--other {
+    align-self: flex-end;
+
+    color: $color-txt-100;
+    background-color: $color-100;
+    border-radius: 10px 3px 3px 0;
+  }
+}

@@ -1,0 +1,46 @@
+@use "../../sass/variables" as *;
+
+.chat-c {
+  width: 38.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: $color-700;
+
+  &__container-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $color-700;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color-100;
+      border-radius: 1rem;
+    }
+  }
+
+  & &__input {
+    width: 100%;
+    height: 5rem;
+
+    font-size: $font-size-200;
+
+    &::placeholder {
+      color: $color-txt-500;
+    }
+  }
+}

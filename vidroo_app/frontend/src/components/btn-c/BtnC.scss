@@ -1,0 +1,50 @@
+@use "../../sass//variables" as *;
+
+.btn-c {
+  // these are the default settings for the button
+  // these can be changed through the passed "className"
+  // we just have to increase the specificity of that selector
+  width: 12rem;
+  height: 4rem;
+
+  font-size: $font-size-250;
+  font-weight: $font-weight-bold;
+
+  cursor: pointer;
+  border: 0;
+  border-radius: $border-radius;
+
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+  }
+
+  &--disabled {
+    background-color: $color-disabled-fill;
+    color: $color-disabled-content;
+    cursor: not-allowed;
+  }
+
+  &--large {
+    width: 18rem;
+    height: 6rem;
+    font-size: $font-size-350;
+  }
+
+  &--small {
+    width: 9rem;
+    height: 3rem;
+    font-size: $font-size-200;
+  }
+
+  &--ex-small {
+    width: 6rem;
+    height: 2rem;
+    font-size: $font-size-150;
+  }
+}

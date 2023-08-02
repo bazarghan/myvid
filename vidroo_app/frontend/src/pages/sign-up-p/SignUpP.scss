@@ -1,0 +1,48 @@
+@use "../../sass/variables" as *;
+
+.sign-up-p {
+  width: 100%;
+  height: 100%;
+
+  &__container-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/photos/al-pacino.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom -10rem right;
+
+    // with this we're creating a stacking context
+    // so that the children inside can't escape from
+    position: relative;
+    z-index: 1;
+
+    // this is the same as above
+    // isolation: isolate;
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      // top, right, bottom, left
+      inset: 0;
+
+      z-index: -1;
+
+      background-color: $color-900;
+      mix-blend-mode: multiply;
+    }
+  }
+}

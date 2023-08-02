@@ -1,0 +1,18 @@
+@use "../../sass/variables" as *;
+
+.avatar-box-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  font-size: $font-size-150;
+
+  color: $color-txt-300;
+
+  &__username {
+    &--admin {
+      color: #ffe57f;
+    }
+  }
+}

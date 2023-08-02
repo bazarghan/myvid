@@ -1,0 +1,72 @@
+@use "../../sass/variables" as *;
+
+.settings-c {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+
+  &__container-1 {
+    width: 22rem;
+    min-height: 22rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid $color-primary;
+
+    background-color: $color-700;
+  }
+
+  &__container-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container-2-1 {
+    width: 60rem;
+    height: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: $font-size-300;
+    font-weight: $font-weight-bold;
+
+    border: 1px solid $color-primary;
+
+    background-color: $color-500;
+    color: $color-primary;
+  }
+
+  &__container-2-2 {
+    width: 60rem;
+    min-height: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-right: 1px solid $color-primary;
+    border-bottom: 1px solid $color-primary;
+    border-left: 1px solid $color-primary;
+
+    background-color: $color-700;
+  }
+
+  &__coming-soon-1,
+  &__coming-soon-2 {
+    color: $color-primary;
+  }
+
+  &__coming-soon-1 {
+    font-size: $font-size-200;
+    margin-top: 4.5rem;
+  }
+
+  &__coming-soon-2 {
+    font-size: $font-size-300;
+    margin-top: 10rem;
+  }
+}

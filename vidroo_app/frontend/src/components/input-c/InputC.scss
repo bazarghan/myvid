@@ -1,0 +1,52 @@
+@use "../../sass/variables" as *;
+
+.input-c {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-weight: $font-weight-regular;
+
+  &__input {
+    width: 30rem;
+    padding: 6px 1.2rem;
+
+    background-color: $color-500;
+    color: $color-txt-300;
+
+    border: 0;
+
+    font-size: $font-size-150;
+
+    &::placeholder {
+      color: $color-100;
+    }
+
+    &--underlined-input {
+      border-bottom: 1px solid $color-primary;
+    }
+
+    &--outlined-input {
+      border: 3px solid $color-100;
+      border-radius: $border-radius;
+    }
+
+    &--dashed-input {
+      border: 1px dashed $color-primary;
+    }
+
+    &--error {
+      border-bottom: 1px solid $color-error;
+    }
+  }
+
+  &__label {
+    font-size: $font-size-200;
+    color: $color-primary;
+  }
+
+  &__error-txt {
+    color: $color-error;
+    margin-top: 5px;
+  }
+}

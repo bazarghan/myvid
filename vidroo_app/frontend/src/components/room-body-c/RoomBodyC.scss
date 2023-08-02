@@ -1,0 +1,74 @@
+@use "../../sass/variables" as *;
+
+.room-body-c {
+  width: 115.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // gap: 10rem;
+
+  &__container-1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    align-self: flex-start;
+
+    margin-top: 3rem;
+    margin-right: 3rem;
+
+    .MuiAvatar-root {
+      width: 4rem;
+      height: 4rem;
+      color: $color-100;
+      background-color: transparent;
+      border: 3px solid $color-100;
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    outline: $color-admin solid 1px;
+    outline-offset: 3px;
+  }
+
+  & &__btn {
+    margin-top: 10rem;
+  }
+
+  &__container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    margin-top: 12rem;
+  }
+
+  & &__input-file {
+    width: 50rem;
+    height: 8rem;
+  }
+
+  & &__input {
+    width: 50rem;
+    background-color: transparent;
+    // border: 1px solid $color-primary;
+
+    &::placeholder {
+      color: $color-primary;
+    }
+  }
+
+  & &__video-player {
+    margin-top: 8rem;
+  }
+
+  &__container-2-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+@use "../../sass//variables" as *;
+
+.settings-item-c {
+  width: 21.8rem;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: $font-size-200;
+
+  border-bottom: 2px solid $color-100;
+
+  color: $color-txt-100;
+
+  cursor: pointer;
+
+  &__container-1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-right: 1.5rem;
+
+    .MuiSvgIcon-root {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .MuiSwitch-root {
+    margin-left: 2rem;
+  }
+
+  &--active {
+    background-color: $color-500;
+  }
+
+  &--toggle {
+    width: 57.5rem;
+  }
+
+  &--no-border {
+    border-bottom: 0;
+  }
+}

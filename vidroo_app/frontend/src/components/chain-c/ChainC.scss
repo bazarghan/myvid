@@ -1,0 +1,32 @@
+@use "../../sass/variables" as *;
+
+.chain-c {
+  display: flex;
+  align-items: center;
+
+  &__circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid $color-300;
+    border-radius: 50%;
+  }
+
+  &__rectangle {
+    width: 22rem;
+    height: 3px;
+    background-color: $color-300;
+  }
+
+  @if &--small {
+    &__circle {
+      width: 1rem;
+      height: 1rem;
+      border: 2px solid $color-300;
+    }
+
+    &__rectangle {
+      width: 5rem;
+      height: 2px;
+    }
+  }
+}
