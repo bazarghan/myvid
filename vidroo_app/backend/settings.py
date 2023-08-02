@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'http://vidroo.ir'
+    'http://vidroo.ir',
+    '37.32.23.232'
 ]
 
 # Application definition

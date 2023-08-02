@@ -6,10 +6,11 @@ import { userConfirmationCredentials } from "../components/confirm-c/ConfirmC";
 import { userUpdateCredentials } from "../components/profile-c/ProfileC";
 import { roomToleaveOrDeletePanel } from "../pages/panel-p/PanelP";
 import { roomToleaveOrDeleteRoom } from "../components/room-nav-c/RoomNavC";
+import { domain } from "../constants/constant";
 const headers = {
   "Content-Type": "application/json",
 };
-const url = "http://localhost:8000/";
+
 export const login = async () => {
   const data = {
     username: userCredentials.email,
@@ -79,7 +80,7 @@ export const getUser = async () => {
   if (data && data.status === 200) {
     const user = {
       username: data.profile.username,
-      imageurl: "http://localhost:8000" + data.profile.profileimageurl,
+      imageurl: domain + data.profile.profileimageurl,
       firstname: data.profile.firstname,
       lastname: data.profile.lastname,
       email: data.profile.email,
@@ -97,7 +98,7 @@ export const updateProfile = async () => {
   if (data) {
     const user = {
       username: data.profile.username,
-      imageurl: "http://localhost:8000" + data.profile.profileimageurl,
+      imageurl: domain + data.profile.profileimageurl,
       firstname: data.profile.firstname,
       lastname: data.profile.lastname,
       email: data.profile.email,

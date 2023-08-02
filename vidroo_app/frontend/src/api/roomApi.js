@@ -3,8 +3,9 @@ import { post, get } from "../utils/httpResquest";
 
 import { roomN } from "../components/pop-up-create-room-main-c/PopUpCreateRoomMainC";
 import { urlKey } from "../pages/room-p/RoomP";
+import { domain } from "../constants/constant";
 
-const myurl = "http://localhost:8000/";
+const myurl = domain+"/";
 export const createRoom = async () => {
   const data = await post(roomN, "api/room/create/");
 

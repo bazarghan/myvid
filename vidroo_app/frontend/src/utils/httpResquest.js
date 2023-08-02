@@ -1,7 +1,7 @@
 import { fabClasses } from "@mui/material";
 import axios from "../api/axios";
 import tokenCheck from "../jwt/tokenCheck.js";
-
+import { domain } from "../constants/constant";
 let headers = {
   "Content-Type": "application/json",
 };
@@ -18,7 +18,7 @@ const newAccessToken = async () => {
   });
   if (response.data && response.data.status === 401) {
     localStorage.removeItem("user");
-    window.location.replace("http://localhost:8000/");
+    window.location.replace(domain);
     return false;
   } else if (response.data && response.data.status === 200) {
     let user = JSON.parse(localStorage.getItem("user"));
