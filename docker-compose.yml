@@ -9,7 +9,7 @@ services:
     volumes:
       - ./vidroo_app:/vidroo_app
     ports:
-      - "8000:8000"
+      - "80:80"
     depends_on:
       - redis
 
